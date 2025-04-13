@@ -1,0 +1,13 @@
+git fetch origin
+git checkout 1-remove-a-task-by-name
+git add .
+git commit -m 'Napraven prv task'
+git push origin 1-remove-a-task-by-name
+git checkout 3-list-tasks-sorted-by-name
+git add .
+git commit -m "Implement sortTasksByName method"
+git push origin 3-list-tasks-sorted-by-name
+git checkout master
+git pull origin master
+git merge 1-remove-a-task-by-name
+git push origin master
